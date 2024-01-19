@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name=EM_MarkDup
+#SBATCH --output=MarkDup.out
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --time=500:00:00
+#SBATCH --mem-per-cpu=3800
+#SBATCH --nice=1000
+#SBATCH --partition=main
+#SBATCH -e MarkDup.%j.err
+#SBATCH --mail-type=FAIL,END
+#SBATCH --mail-user=emiliano.mora@systbot.uzh.ch
+#SBATCH --exclude=compute003,compute002,compute001,med128compute003,med128compute004
+
+#Creates a BAM file where the PCR duplicates are indicated. Takes approximately ~30 minutes.
+
+#java -jar /home/ubuntu/giacomo-2/programs/picard.jar MarkDuplicates \
+#     I=merged.bam \
+#      O=marked_duplicates.bam \
+#      M=marked_dup_metrics.txt
+
+BAM_files=$(ls | grep EM32)
+
+for i in ${BAM_files[@]}; do
+
+java -jar /home/ubuntu/giacomo-2/programs/picard.jar MarkDuplicates \
+      I=$i \
+      O=''$i'mdup.bam' \
+      M='marked_dup_metrics'$i''.txt; done
