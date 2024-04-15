@@ -8,7 +8,6 @@
 #SBATCH --mem-per-cpu=3800
 #SBATCH --nice=0
 
-#pops=(EM33 EMC1 RS170 RS180 RSBK01)
 pops=(EMC3 EMC6)
 chr=(pve_haplotypeT_001 pve_haplotypeT_002 pve_haplotypeT_003 pve_haplotypeT_004 pve_haplotypeT_005 pve_haplotypeT_006 pve_haplotypeT_007 pve_haplotypeT_008 pve_haplotypeT_009 pve_haplotypeT_010 pve_haplotypeT_0
 11)
