@@ -1,1 +1,1 @@
-
+When doing the mapping we realized that all the sequencing reads from different lanes were concatenated and that information was not taken into account for the analses. Information of sequecing lane is essential to dilter duplicated reads with Picard. THerefore, we had to break the *.bam files per individual so that we add the information of the sequencing lane to later run the Picard pipelane followed by the variant calling with GATK.
