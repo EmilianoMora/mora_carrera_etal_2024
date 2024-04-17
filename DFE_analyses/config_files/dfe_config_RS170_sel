@@ -1,0 +1,14 @@
+data_path_1     /home/ubuntu/emiliano/executables/dfe-alpha-release-2.16/data
+data_path_2     /home/ubuntu/emiliano/executables/dfe-alpha-release-2.16
+sfs_input_file  /home/ubuntu/emiliano/2nd_chp/DFE/sfs_dfe/sfs_RS170
+est_dfe_results_dir     /home/ubuntu/emiliano/2nd_chp/DFE/outputs/RS170_sel
+est_dfe_demography_results_file /home/ubuntu/emiliano/2nd_chp/DFE/outputs/RS170_neu/est_dfe.out
+site_class 1
+fold 0
+epochs 2
+mean_s_variable 1
+mean_s -0.1
+beta_variable 1
+beta 0.5
+p_additional 0.018
+s_additional 0.086

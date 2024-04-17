@@ -1,0 +1,10 @@
+data_path_1     /home/ubuntu/emiliano/executables/dfe-alpha-release-2.16/data
+data_path_2     /home/ubuntu/emiliano/executables/dfe-alpha-release-2.16
+sfs_input_file  /home/ubuntu/emiliano/2nd_chp/DFE/sfs_dfe/sfs_RS180
+est_dfe_results_dir     /home/ubuntu/emiliano/2nd_chp/DFE/outputs/RS180_neu
+site_class 0
+fold 0
+epochs 2
+search_n2 1
+t2_variable 1
+t2 50
